@@ -1,0 +1,16 @@
+@import '../../general.scss';
+
+.container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: $ruler-lg $ruler-xl;
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .container {
+    padding: $ruler-md $ruler-lg;
+  }
+}

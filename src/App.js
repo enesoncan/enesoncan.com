@@ -1,11 +1,19 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
+
+import Home from './containers/Home';
+
+import './general.scss';
 
 function App() {
+  const [darkTheme, setDarkTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkTheme(!darkTheme);
+  };
+
   return (
-    <div className="App">
-      <h1>Hello, I'm Enes.</h1>
-      <p>I work as a Front-End Developer at Cimri.com</p>
+    <div className={darkTheme ? 'darkTheme' : 'lightTheme'}>
+      <Home darkTheme={darkTheme} toggleTheme={toggleTheme} />
     </div>
   );
 }
