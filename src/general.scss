@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
-// Breakpoints
+// VARIABLES
+
+//- Breakpoints
 $bp-small: 568px;
 $bp-medium: 768px;
 $bp-large: 992px;
 
-// Rulers
+//- Rulers
 $ruler-xs: 4px;
 $ruler-sm: 8px;
 $ruler-md: 16px;
@@ -15,11 +17,14 @@ $ruler-xl: 64px;
 body {
   margin: 0;
   padding: 0;
+  font-weight: 500;
   font-family: 'Quicksand', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+//THEME
 
 .darkTheme {
   color: #f1f5f8;
@@ -28,7 +33,40 @@ body {
 }
 
 .lightTheme {
-  color: #7723db;
+  color: #191919; //#7723db
   transition: 500ms;
   background-color: #fff;
+}
+
+// TYPOGRAPHY
+.title,
+.heading,
+.content {
+  margin: 0;
+  color: inherit;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.heading {
+  font-size: 32px;
+}
+
+.content {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .title {
+    font-size: 32px;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .content {
+    font-size: 16px;
+  }
 }

@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-
 import Home from './containers/Home';
-
-import './general.scss';
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false);

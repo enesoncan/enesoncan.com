@@ -7,7 +7,7 @@ import './styles.scss';
 const Header = ({ darkTheme, toggleTheme }) => {
   return (
     <header className="header-wrapper">
-      <p>enesoncan</p>
+      <p className="heading">enesoncan</p>
       <SwitchButton darkTheme={darkTheme} toggleTheme={toggleTheme} />
     </header>
   );
