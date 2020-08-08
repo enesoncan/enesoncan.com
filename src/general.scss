@@ -19,6 +19,24 @@ $ruler-xl: 64px;
   background-color: #7723db;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7723db;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7723dbcc;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -33,13 +51,13 @@ body {
 
 .darkTheme {
   color: #f1f5f8;
-  transition: 500ms;
+  transition: 300ms;
   background-color: #111;
 }
 
 .lightTheme {
   color: #191919; //#7723db
-  transition: 500ms;
+  transition: 300ms;
   background-color: #fff;
 }
 
