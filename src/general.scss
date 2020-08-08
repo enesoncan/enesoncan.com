@@ -14,6 +14,11 @@ $ruler-md: 16px;
 $ruler-lg: 32px;
 $ruler-xl: 64px;
 
+::selection {
+  color: #fff;
+  background-color: #7723db;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -41,22 +46,36 @@ body {
 // TYPOGRAPHY
 .title,
 .heading,
-.content {
+.content,
+.link {
   margin: 0;
   color: inherit;
   font-weight: 500;
 }
 
 .title {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .content {
-  font-size: 22px;
+  font-size: 18px;
+  margin-top: $ruler-lg;
+  line-height: 35px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.cimri-texture {
+  color: #4990e2;
+}
+.emlakjet-texture {
+  color: #51c946;
 }
 
 @media only screen and (max-width: $bp-medium) {
