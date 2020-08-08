@@ -1,0 +1,29 @@
+.social-wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  a {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font-size: 26px;
+    text-decoration: none;
+    transition: transform 300ms;
+  }
+
+  a:hover {
+    transform: translateY(-5px);
+  }
+
+  a:first-child {
+    margin-left: 0;
+  }
+}
