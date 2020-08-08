@@ -6,11 +6,5 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  padding: $ruler-lg $ruler-xl;
-}
-
-@media only screen and (max-width: $bp-medium) {
-  .container {
-    padding: $ruler-md $ruler-lg;
-  }
+  padding: $ruler-lg 12vw;
 }
