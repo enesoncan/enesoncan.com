@@ -45,20 +45,13 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-//THEME
-
-.darkTheme {
-  color: #f1f5f8;
-  transition: 300ms;
-  background-color: #111;
-}
-
-.lightTheme {
-  color: #191919; //#7723db
-  transition: 300ms;
+  color: #191919;
   background-color: #fff;
+}
+
+body[dark-mode='true'] {
+  color: #f1f5f8;
+  background-color: #111;
 }
 
 // TYPOGRAPHY

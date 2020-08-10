@@ -9,10 +9,13 @@ function App() {
     if (value === null) {
       setDarkTheme(false);
       window.localStorage.setItem('dark-mode-enabled', false);
+      document.getElementsByTagName('html')[0].removeAttribute('dark-mode');
     } else if (value === 'true') {
       setDarkTheme(true);
+      document.getElementsByTagName('body')[0].setAttribute('dark-mode', true);
     } else {
       setDarkTheme(false);
+      document.getElementsByTagName('body')[0].removeAttribute('dark-mode');
     }
   }, []);
 
@@ -20,19 +23,15 @@ function App() {
     if (localStorage.getItem('dark-mode-enabled') == 'false') {
       setDarkTheme(true);
       window.localStorage.setItem('dark-mode-enabled', true);
+      document.getElementsByTagName('body')[0].setAttribute('dark-mode', true);
     } else {
       setDarkTheme(false);
       window.localStorage.setItem('dark-mode-enabled', false);
+      document.getElementsByTagName('body')[0].removeAttribute('dark-mode');
     }
   };
 
-  return (
-    <div
-      className={localStorage.getItem('dark-mode-enabled') === 'true' ? 'darkTheme' : 'lightTheme'}
-    >
-      <Home darkTheme={darkTheme} toggleTheme={toggleTheme} />
-    </div>
-  );
+  return <Home darkTheme={darkTheme} toggleTheme={toggleTheme} />;
 }
 
 export default App;
