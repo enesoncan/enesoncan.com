@@ -17,6 +17,7 @@ const Home = ({ darkTheme, toggleTheme }) => {
       <Container>
         <Social />
         <Footer />
+        <span>hello</span>
       </Container>
     </>
   );
