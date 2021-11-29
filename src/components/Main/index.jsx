@@ -12,13 +12,12 @@ const Main = () => {
         Çanakkale Onsekiz Mart Üniversitesi, Bilgisayar Programcılığı bölümünden mezun oldum. Şu
         anda
         <a
-          href="https://www.cimri.com"
+          href="https://teknasyon.com"
           target="_blank"
           rel="noopener noreferrer"
           className="cimri-texture link"
         >
-          {' '}
-          Cimri.com{' '}
+          Teknasyon
         </a>
         şirketinde <span style={{ color: '#7723db' }}>Front-End Developer</span> olarak
         çalışmaktayım. Hakkımda daha fazla bilgi edinmek için
