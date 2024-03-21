@@ -1,7 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Home from './containers/Home';
+'use client'
 
-function App() {
+import { useEffect, useState } from 'react';
+import Header from '../components/Header';
+import Container from '../components/Layout/Container';
+import Content from '../components/Content';
+import Social from '../components/Social';
+import Footer from '../components/Footer';
+
+const Main = () => {
   const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
@@ -31,7 +37,20 @@ function App() {
     }
   };
 
-  return <Home darkTheme={darkTheme} toggleTheme={toggleTheme} />;
-}
+  return (
+    <>
+      <Container>
+        <Header darkTheme={darkTheme} toggleTheme={toggleTheme} />
+      </Container>
+      <Container>
+        <Content />
+      </Container>
+      <Container>
+        <Social />
+        <Footer />
+      </Container>
+    </>
+  );
+};
 
-export default App;
+export default Main;
