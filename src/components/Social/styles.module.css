@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.social .link {
+  padding: 4px;
+  display: flex;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  transition: all 150ms;
+  background-color: #1a1a1a;
+}
+
+.social .link:hover {
+  transform: translateY(-5px);
+}
